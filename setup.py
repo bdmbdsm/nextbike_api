@@ -1,7 +1,15 @@
+import os
+import sys
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+
+# 'setup.py publish' shortcut.
+if sys.argv[-1] == 'publish':
+    os.system('python setup.py sdist bdist_wheel')
+    os.system('twine upload dist/*')
+    sys.exit()
 
 setuptools.setup(
     name="nextbike_api",
