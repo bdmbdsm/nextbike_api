@@ -1,0 +1,2 @@
+class NotAllowedQueryKey(Exception):
+    pass

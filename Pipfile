@@ -8,8 +8,10 @@ setuptools = "*"
 wheel = "*"
 twine = "*"
 pytest = "*"
+ipdb = "*"
 
 [packages]
+requests = "*"
 
 [requires]
 python_version = "3.6"
