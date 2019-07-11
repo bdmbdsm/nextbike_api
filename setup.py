@@ -19,7 +19,7 @@ setuptools.setup(
     description="Nextbike API wrapper",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/smthsm",
+    url="https://github.com/bdmbdsm/nextbike_api",
     packages=setuptools.find_namespace_packages(exclude=['tests']),
     install_requires=['requests==2.22.0'],
     classifiers=[
