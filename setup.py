@@ -20,7 +20,8 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pypa/smthsm",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_namespace_packages(exclude=['tests']),
+    install_requires=['requests==2.22.0'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
