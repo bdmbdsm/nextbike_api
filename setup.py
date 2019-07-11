@@ -13,7 +13,7 @@ if sys.argv[-1] == 'publish':
 
 setuptools.setup(
     name="nextbike_api",
-    version="0.0.1",
+    version="0.0.2",
     author="Bohdan Dmytriv",
     author_email="bodik75@ukr.net",
     description="Nextbike API wrapper",
