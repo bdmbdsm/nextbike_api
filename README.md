@@ -6,6 +6,20 @@ It's worthy to note, that the API itself isn't open, so there is no permission o
 
 Currently, the client implements only read operations.
 
+# How to use the client
+
+The client itself is very simple.
+It allows acquiring all of the data, which, in turn, takes a lot of time, or fetch some country data only.
+Note, that "country" in terms of Nextbike API is not equal to its common meaning.
+
+```
+from nextbike_api.client import Client
+
+
+c = Client()
+print(c.country('ua'))
+```
+
 ### How to run the tests
 
 There are two kinds of tests here: unit tests and integration tests. First ones do their job without interaction with some external stuff, e. g. Nextbike API.
